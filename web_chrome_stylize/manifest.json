@@ -1,0 +1,19 @@
+{
+    "name": "chrome-stylize",
+    "author": "masiro",
+    "description": "braken my heart in google serch home viwe!",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "web_accessible_resources": ["*"],
+    "permissions": ["storage"],
+    "content_scripts" : [
+        {
+            "matches":["https://www.google.co.jp/*"],
+            "css": ["google/style.css"]
+        },
+        {
+            "matches":["https://www.google.com/*"],
+            "css":["google/style.css"]
+        }
+    ]
+}
